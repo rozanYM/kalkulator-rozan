@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Kalkulator Wisata Rozan</title>
+</head>
+<body>
+
+    <h2>Kalkulator Estimasi Biaya Wisata</h2>
+
+    <label for="jumlah-orang">Jumlah Peserta (Orang):</label><br>
+    <input type="number" id="jumlah-orang" value="1" min="1"><br><br>
+
+    <label for="lama-hari">Lama Wisata (Hari):</label><br>
+    <input type="number" id="lama-hari" value="1" min="1"><br><br>
+
+    <fieldset style="margin: 15px 0; padding: 10px; border: 1px solid #0f0e0e;">
+        <legend>Layanan Tambahan (Opsional):</legend>
+        <label>
+            <input type="checkbox" id="cek-asuransi">
+            Asuransi Perjalanan (Rp 50.000 / orang)
+        </label><br>
+        <label>
+            <input type="checkbox" id="cek-fotografer">
+            Fotografer (Rp 300.000 / hari) - <i>Min. 2 Hari</i>
+        </label>
+    </fieldset>
+
+    <label for="kode-promo">Punya Kode Promo?</label><br>
+    <input type="text" id="kode-promo" placeholder="Masukkan kode disini..."><br><br>
+
+    <button type="button" onclick="hitungEstimasi()">Hitung Estimasi</button>
+
+    <div id="hasil-rincian" style="margin-top: 20px;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
